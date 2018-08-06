@@ -27,7 +27,7 @@ Widget::Widget(QWidget *parent) :
     if(QSqlDatabase::isDriverAvailable(DRIVER))
     {
         mydb = QSqlDatabase::addDatabase(DRIVER);
-        mydb.setDatabaseName("C:/SqLite/barcode.db");
+        mydb.setDatabaseName("SqLite/barcode.db");
         if(mydb.open())
         {
             ui->SqlSelectLabel->setStyleSheet("color: rgb(0, 170, 0)");
